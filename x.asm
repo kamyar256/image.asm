@@ -1,0 +1,444 @@
+; --- LC3 Assembly for 20x20 THICK 'X' ---
+        .ORIG xA000
+
+; --- Row  0 ---
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+
+; --- Row  1 ---
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+
+; --- Row  2 ---
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+
+; --- Row  3 ---
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+
+; --- Row  4 ---
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+
+; --- Row  5 ---
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+
+; --- Row  6 ---
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+
+; --- Row  7 ---
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+
+; --- Row  8 ---
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+
+; --- Row  9 ---
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+
+; --- Row 10 ---
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+
+; --- Row 11 ---
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+
+; --- Row 12 ---
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+
+; --- Row 13 ---
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+
+; --- Row 14 ---
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+
+; --- Row 15 ---
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+
+; --- Row 16 ---
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+
+; --- Row 17 ---
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+
+; --- Row 18 ---
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+
+; --- Row 19 ---
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL #0
+        .FILL x03E0
+        .FILL x03E0
+        .FILL x03E0
+
+        .END

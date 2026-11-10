@@ -1,0 +1,9 @@
+reset
+ld p3os.obj
+as x.asm
+as o.asm
+ld x.obj
+ld o.obj
+as image.asm
+ld image.obj
+set pc x3000
